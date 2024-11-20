@@ -1,0 +1,30 @@
+create table korisnik(
+idKorisnika int identity(1,1) not null primary key,
+imeKorisnika varchar(20) not null,
+prezimeKorisnika varchar(20) not null,
+emailKorisnika varchar(50) not null,
+telefonKorisnika int not null,
+lozinkaKorisnika varchar(20) not null
+);
+
+create table karta(
+idKarte int not null primary key,
+imePutnika varchar(20) not null,
+prezimePutnika varchar(20) not null,
+poletanje varchar(50) not null,
+sletanje varchar(50) not null,
+klasa varchar(20) not null,
+vremePoletanja varchar(10) not null,
+datumPoletanja varchar(12) not null,
+sediste varchar(5) not null,
+brojLeta varchar(30) not null,
+kapija varchar(5) not null
+);
+
+create table admini(
+idAdmina int not null primary key,
+korisnickoImeAdmina varchar(20) not null,
+lozinkaAdmina varchar(20) not null
+);
+
+alter table karta add foreign key (idPutnika) references korisnik(idKorisnika);
