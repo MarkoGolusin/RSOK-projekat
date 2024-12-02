@@ -1,3 +1,5 @@
+create database AvioKarte
+
 create table korisnik(
 idKorisnika int identity(1,1) not null primary key,
 imeKorisnika varchar(20) not null,
