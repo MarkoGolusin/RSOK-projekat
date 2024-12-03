@@ -29,6 +29,6 @@ korisnickoImeAdmina varchar(20) not null,
 lozinkaAdmina varchar(20) not null
 );
 
-alter table karta add foreign key (idPutnika) references korisnik(idKorisnika);
+alter table karta add foreign key (idKarte) references korisnik(idKorisnika);
 
-insert into admini values (1,admin,admin)
+insert into admini values (1,'admin','admin');
