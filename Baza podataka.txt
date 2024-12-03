@@ -30,3 +30,5 @@ lozinkaAdmina varchar(20) not null
 );
 
 alter table karta add foreign key (idPutnika) references korisnik(idKorisnika);
+
+insert into admini values (1,admin,admin)
