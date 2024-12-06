@@ -43,6 +43,7 @@
             button1.TabIndex = 0;
             button1.Text = "REZERVACIJA";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // dataGridView2
             // 

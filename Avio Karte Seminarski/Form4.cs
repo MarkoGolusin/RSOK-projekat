@@ -85,5 +85,12 @@ namespace SeminarskiRSOK
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.Show();
+            this.Hide();
+        }
     }
 }

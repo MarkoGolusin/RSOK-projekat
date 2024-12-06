@@ -33,7 +33,6 @@
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
-            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -79,30 +78,17 @@
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(300, 220);
             button2.Name = "button2";
-            button2.Size = new Size(219, 33);
+            button2.Size = new Size(219, 69);
             button2.TabIndex = 3;
             button2.Text = "REZERVACIJA";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(255, 192, 128);
-            button3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(300, 268);
-            button3.Name = "button3";
-            button3.Size = new Size(219, 33);
-            button3.TabIndex = 4;
-            button3.Text = "REGISTRACIJA PUTNIKA";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
@@ -121,6 +107,5 @@
         private Label label1;
         private Button button1;
         private Button button2;
-        private Button button3;
     }
 }

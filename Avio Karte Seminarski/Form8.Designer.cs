@@ -300,6 +300,7 @@
             Controls.Add(button2);
             Name = "Form8";
             Text = "Form8";
+            Load += Form8_Load;
             ResumeLayout(false);
             PerformLayout();
         }

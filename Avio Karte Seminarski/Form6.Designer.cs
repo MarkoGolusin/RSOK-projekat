@@ -53,6 +53,7 @@
             button1.TabIndex = 0;
             button1.Text = "REZERVIŠI";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -166,6 +167,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(233, 33);
             textBox5.TabIndex = 12;
+            textBox5.UseSystemPasswordChar = true;
             // 
             // Form6
             // 
@@ -187,6 +189,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "Form6";
+            Load += Form6_Load;
             ResumeLayout(false);
             PerformLayout();
         }

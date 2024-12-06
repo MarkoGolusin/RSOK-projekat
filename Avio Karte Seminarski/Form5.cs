@@ -105,7 +105,7 @@ namespace SeminarskiRSOK
                         }
                     }
 
-                    // Refresh the DataGridView to reflect the deletion
+                    
                     ResetTabele();
                 }
                 else

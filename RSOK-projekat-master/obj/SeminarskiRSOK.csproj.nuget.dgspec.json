@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sakib\\OneDrive\\Радна површина\\RSOK-projekat-master\\SeminarskiRSOK.csproj": {}
+    "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\RSOK-projekat-master\\SeminarskiRSOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sakib\\OneDrive\\Радна површина\\RSOK-projekat-master\\SeminarskiRSOK.csproj": {
+    "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\RSOK-projekat-master\\SeminarskiRSOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sakib\\OneDrive\\Радна површина\\RSOK-projekat-master\\SeminarskiRSOK.csproj",
+        "projectUniqueName": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\RSOK-projekat-master\\SeminarskiRSOK.csproj",
         "projectName": "SeminarskiRSOK",
-        "projectPath": "C:\\Users\\sakib\\OneDrive\\Радна површина\\RSOK-projekat-master\\SeminarskiRSOK.csproj",
+        "projectPath": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\RSOK-projekat-master\\SeminarskiRSOK.csproj",
         "packagesPath": "C:\\Users\\sakib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sakib\\OneDrive\\Радна површина\\RSOK-projekat-master\\obj\\",
+        "outputPath": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\RSOK-projekat-master\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sakib\\AppData\\Roaming\\NuGet\\NuGet.Config",

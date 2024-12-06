@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J+YHEQ9KhlQnvP6y8c6Skhz4U165t3ju/2987UAPNX9WtrY72WCKJZnTxQszngigSmwdqjXwXGUOy9N1yvRU+w==",
+  "dgSpecHash": "kadOqBq52Sn8sGW1UOYXTG0gkxe2fAXv5fkCkEemmHo1SVMnkr55tKOt0louYsc1nGpxAeRNEvnHXG63h6IwLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sakib\\OneDrive\\Радна површина\\RSOK-projekat-master\\SeminarskiRSOK.csproj",
+  "projectFilePath": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sakib\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\sakib\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jerkov\\.nuget\\packages\\": {}
+    "C:\\Users\\sakib\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SeminarskiRSOK\\SeminarskiRSOK\\SeminarskiRSOK.csproj",
+      "projectUniqueName": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\SeminarskiRSOK\\SeminarskiRSOK\\SeminarskiRSOK.csproj",
       "projectName": "SeminarskiRSOK",
-      "projectPath": "D:\\SeminarskiRSOK\\SeminarskiRSOK\\SeminarskiRSOK.csproj",
-      "packagesPath": "C:\\Users\\Jerkov\\.nuget\\packages\\",
-      "outputPath": "D:\\SeminarskiRSOK\\SeminarskiRSOK\\obj\\",
+      "projectPath": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\SeminarskiRSOK\\SeminarskiRSOK\\SeminarskiRSOK.csproj",
+      "packagesPath": "C:\\Users\\sakib\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sakib\\Source\\Repos\\RSOK-projekat\\SeminarskiRSOK\\SeminarskiRSOK\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jerkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sakib\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
