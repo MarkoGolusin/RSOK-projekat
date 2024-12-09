@@ -41,6 +41,8 @@
             textBox3 = new TextBox();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -119,7 +121,7 @@
             // 
             button2.BackColor = Color.FromArgb(128, 255, 255);
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(454, 12);
+            button2.Location = new Point(1084, 27);
             button2.Name = "button2";
             button2.Size = new Size(75, 31);
             button2.TabIndex = 7;
@@ -169,12 +171,22 @@
             textBox5.TabIndex = 12;
             textBox5.UseSystemPasswordChar = true;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(472, 97);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(687, 267);
+            dataGridView1.TabIndex = 13;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-            ClientSize = new Size(532, 486);
+            ClientSize = new Size(1182, 486);
+            Controls.Add(dataGridView1);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
@@ -190,6 +202,7 @@
             Controls.Add(button1);
             Name = "Form6";
             Load += Form6_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -209,5 +222,6 @@
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox5;
+        private DataGridView dataGridView1;
     }
 }
