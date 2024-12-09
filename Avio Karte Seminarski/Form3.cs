@@ -47,9 +47,14 @@ namespace SeminarskiRSOK
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form9 form9 = new Form9(); 
+            Form9 form9 = new Form9();
             form9.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

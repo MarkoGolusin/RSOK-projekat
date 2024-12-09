@@ -22,7 +22,7 @@ namespace SeminarskiRSOK
 
         private void binDataGrid()
         {
-            string constring = "Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+            string constring = "Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
 
@@ -40,7 +40,7 @@ namespace SeminarskiRSOK
 
         private void BinGrid()
         {
-            string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+            string constring = @"Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
                 using (SqlCommand cmd = new SqlCommand("Select * FROM karta", con))
@@ -81,7 +81,7 @@ namespace SeminarskiRSOK
         private void button1_Click(object sender, EventArgs e)
         {
             int idKarte = (int)dataGridView1.CurrentRow.Cells[0].Value;
-            SqlConnection con = new SqlConnection("Data Source = DESKTOP-1VNGR39; Initial Catalog = AvioKarte; Integrated Security = True;");
+            SqlConnection con = new SqlConnection("Data Source = DESKTOP-DOL06LT; Initial Catalog = AvioKarte; Integrated Security = True;");
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into korisnik values (@imeKorisnika, @prezimeKorisnika, @emailKorisnika, @telefonKorisnika, @lozinkaKorisnika) UPDATE karta SET imePutnika=@imeKorisnika, prezimePutnika=@prezimeKorisnika WHERE idKarte=@idKarte", con);
 
@@ -104,7 +104,7 @@ namespace SeminarskiRSOK
         {
             try
             {
-                string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+                string constring = @"Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;";
                 using (SqlConnection con = new SqlConnection(constring))
                 {
 
@@ -137,6 +137,79 @@ namespace SeminarskiRSOK
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string constring = @"Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;";
+                using (SqlConnection con = new SqlConnection(constring))
+                {
+
+                    con.Open();
+
+
+                    string selectQuery = "SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'";
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+                    {
+
+                        DataTable dt = new DataTable();
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+
+                            da.Fill(dt);
+                        }
+
+
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Greska " + ex.Message);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string constring = @"Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;";
+                using (SqlConnection con = new SqlConnection(constring))
+                {
+
+                    con.Open();
+
+
+                    string selectQuery = "SELECT * FROM karta";
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+                    {
+
+                        DataTable dt = new DataTable();
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+
+                            da.Fill(dt);
+                        }
+
+
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Greska " + ex.Message);
+            }
         }
     }
 }

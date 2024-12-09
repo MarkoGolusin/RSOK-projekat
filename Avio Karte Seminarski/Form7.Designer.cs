@@ -77,6 +77,7 @@
             Controls.Add(button2);
             Name = "Form7";
             Text = "Form7";
+            Load += Form7_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

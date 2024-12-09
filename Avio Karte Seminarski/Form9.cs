@@ -23,5 +23,10 @@ namespace SeminarskiRSOK
             f3.Show();
             this.Hide();
         }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

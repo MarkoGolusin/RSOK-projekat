@@ -77,6 +77,7 @@
             Controls.Add(dataGridView1);
             Name = "Form9";
             Text = "Form9";
+            Load += Form9_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
