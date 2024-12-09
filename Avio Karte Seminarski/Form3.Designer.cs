@@ -115,7 +115,7 @@
             button5.Name = "button5";
             button5.Size = new Size(152, 33);
             button5.TabIndex = 6;
-            button5.Text = "BRISANJE KARAZA";
+            button5.Text = "BRISANJE KARATA";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 

@@ -172,19 +172,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sakib\\.nuget\\packages\\": {}
+    "C:\\Users\\Jerkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sakib\\OneDrive\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+      "projectUniqueName": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
       "projectName": "SeminarskiRSOK",
-      "projectPath": "C:\\Users\\sakib\\OneDrive\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
-      "packagesPath": "C:\\Users\\sakib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sakib\\OneDrive\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\obj\\",
+      "projectPath": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+      "packagesPath": "C:\\Users\\Jerkov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sakib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jerkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

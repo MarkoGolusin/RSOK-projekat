@@ -27,7 +27,7 @@ namespace SeminarskiRSOK
         }
         private void binDataGrid()
         {
-            string constring = "Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;Trust Server Certificate=True";
+            string constring = "Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;Trust Server Certificate=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
 
@@ -45,7 +45,7 @@ namespace SeminarskiRSOK
 
         private void BinGrid()
         {
-            string constring = @"Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;";
+            string constring = @"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
                 using (SqlCommand cmd = new SqlCommand("Select * FROM karta", con))

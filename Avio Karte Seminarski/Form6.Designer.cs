@@ -51,7 +51,7 @@
             // 
             button1.BackColor = Color.FromArgb(255, 192, 128);
             button1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(185, 415);
+            button1.Location = new Point(185, 395);
             button1.Name = "button1";
             button1.Size = new Size(151, 45);
             button1.TabIndex = 0;
@@ -123,7 +123,7 @@
             // 
             button2.BackColor = Color.FromArgb(128, 255, 255);
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1084, 27);
+            button2.Location = new Point(1574, 32);
             button2.Name = "button2";
             button2.Size = new Size(75, 31);
             button2.TabIndex = 7;
@@ -178,28 +178,32 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(472, 97);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(687, 267);
+            dataGridView1.Size = new Size(1177, 267);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button3
             // 
-            button3.Location = new Point(498, 37);
+            button3.BackColor = Color.FromArgb(128, 255, 128);
+            button3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(472, 46);
             button3.Name = "button3";
-            button3.Size = new Size(170, 23);
+            button3.Size = new Size(170, 34);
             button3.TabIndex = 16;
-            button3.Text = "Slobodne karte";
-            button3.UseVisualStyleBackColor = true;
+            button3.Text = "SLOBODNE KARTE";
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(708, 38);
+            button4.BackColor = Color.FromArgb(255, 128, 128);
+            button4.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Location = new Point(648, 46);
             button4.Name = "button4";
-            button4.Size = new Size(75, 23);
+            button4.Size = new Size(87, 33);
             button4.TabIndex = 17;
-            button4.Text = "reset";
-            button4.UseVisualStyleBackColor = true;
+            button4.Text = "RESET";
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // Form6
@@ -207,7 +211,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-            ClientSize = new Size(1182, 486);
+            ClientSize = new Size(1675, 469);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(dataGridView1);

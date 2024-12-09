@@ -59,7 +59,7 @@
             button1.BackColor = Color.FromArgb(255, 192, 128);
             button1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(526, 516);
+            button1.Location = new Point(526, 476);
             button1.Name = "button1";
             button1.Size = new Size(153, 44);
             button1.TabIndex = 5;
@@ -71,7 +71,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-            ClientSize = new Size(1207, 621);
+            ClientSize = new Size(1207, 543);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(dataGridView1);

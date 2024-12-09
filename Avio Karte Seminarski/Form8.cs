@@ -31,7 +31,7 @@ namespace SeminarskiRSOK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = DESKTOP-DOL06LT; Initial Catalog = AvioKarte; Integrated Security = True;");
+            SqlConnection con = new SqlConnection("Data Source = DESKTOP-DMH1A5F; Initial Catalog = AvioKarte; Integrated Security = True;");
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into karta values (@idKarte, @imePutnika, @prezimePutnika, @poletanje, @sletanje, @klasa, @vremePoletanja, @datumPoletanja, @sediste, @brojLeta, @kapija)", con);
 
@@ -61,6 +61,11 @@ namespace SeminarskiRSOK
         }
 
         private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

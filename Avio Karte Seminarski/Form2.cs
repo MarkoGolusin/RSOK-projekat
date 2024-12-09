@@ -19,7 +19,7 @@ namespace SeminarskiRSOK
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-DOL06LT;Initial Catalog=AvioKarte;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;");
 
         private void button1_Click(object sender, EventArgs e)
         {

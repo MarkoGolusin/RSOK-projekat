@@ -26,8 +26,8 @@ namespace SeminarskiRSOK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.Show();
+            Form1 f1 = new Form1();
+            f1.Show();
             Visible = false;
         }
 
