@@ -36,11 +36,6 @@ namespace SeminarskiRSOK
             Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form4 f4 = new Form4();
-            f4.Show();
-            Visible = false;
-        }
+
     }
 }

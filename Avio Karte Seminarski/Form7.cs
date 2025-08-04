@@ -66,5 +66,64 @@ namespace SeminarskiRSOK
             }
         }
 
-    }
+        private void Form7_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source = DESKTOP-1VNGR39; Initial Catalog = AvioKarte; Integrated Security = True;");
+            con.Open();
+            string selectQuery = "SELECT * FROM karta where imePutnika!='nije rezervisano' AND prezimePutnika!='nije rezervisano'";
+            using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+            {
+
+                DataTable dt = new DataTable();
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+
+                    da.Fill(dt);
+                }
+
+
+                dataGridView1.DataSource = dt;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+                try
+                {
+                    string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+                    using (SqlConnection con = new SqlConnection(constring))
+                    {
+
+                        con.Open();
+
+
+                        string selectQuery = "SELECT * FROM karta";
+                        using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+                        {
+
+                            DataTable dt = new DataTable();
+                            using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                            {
+
+                                da.Fill(dt);
+                            }
+
+
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Greska pri prikazivanju nove tabele " + ex.Message);
+                }
+            }
+        
+        }
 }

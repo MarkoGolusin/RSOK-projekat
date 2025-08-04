@@ -43,7 +43,7 @@ namespace SeminarskiRSOK
             string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
-                using (SqlCommand cmd = new SqlCommand("Select * FROM karta", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'", con))
                 {
 
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
@@ -80,24 +80,32 @@ namespace SeminarskiRSOK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int idKarte = (int)dataGridView1.CurrentRow.Cells[0].Value;
-            SqlConnection con = new SqlConnection("Data Source = DESKTOP-1VNGR39; Initial Catalog = AvioKarte; Integrated Security = True;");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("insert into korisnik values (@imeKorisnika, @prezimeKorisnika, @emailKorisnika, @telefonKorisnika, @lozinkaKorisnika) UPDATE karta SET imePutnika=@imeKorisnika, prezimePutnika=@prezimeKorisnika WHERE idKarte=@idKarte", con);
+            try
+            {
+                int idKarte = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                SqlConnection con = new SqlConnection("Data Source = DESKTOP-1VNGR39; Initial Catalog = AvioKarte; Integrated Security = True;");
+                con.Open();
+                SqlCommand cmd = new SqlCommand("insert into korisnik values (@imeKorisnika, @prezimeKorisnika, @emailKorisnika, @telefonKorisnika, @lozinkaKorisnika) UPDATE karta SET imePutnika=@imeKorisnika, prezimePutnika=@prezimeKorisnika WHERE idKarte=@idKarte", con);
 
-            cmd.Parameters.AddWithValue("@imeKorisnika", textBox1.Text);
-            cmd.Parameters.AddWithValue("@prezimeKorisnika", textBox2.Text);
-            cmd.Parameters.AddWithValue("@telefonKorisnika", int.Parse(textBox3.Text));
-            cmd.Parameters.AddWithValue("@emailKorisnika", textBox4.Text);
-            cmd.Parameters.AddWithValue("@lozinkaKorisnika", textBox5.Text);
-            cmd.Parameters.AddWithValue("@idKarte", idKarte);
+                cmd.Parameters.AddWithValue("@imeKorisnika", textBox1.Text);
+                cmd.Parameters.AddWithValue("@prezimeKorisnika", textBox2.Text);
+                cmd.Parameters.AddWithValue("@telefonKorisnika", int.Parse(textBox3.Text));
+                cmd.Parameters.AddWithValue("@emailKorisnika", textBox4.Text);
+                cmd.Parameters.AddWithValue("@lozinkaKorisnika", textBox5.Text);
+                cmd.Parameters.AddWithValue("@idKarte", idKarte);
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
+                con.Close();
 
-            MessageBox.Show("Podaci su uspešno uneti!");
+                MessageBox.Show("Podaci su uspešno uneti!");
 
-            ResetTabele();
+                ResetTabele();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Niste popunili sva polja!");
+            }
         }
 
         private void ResetTabele()
@@ -111,7 +119,7 @@ namespace SeminarskiRSOK
                     con.Open();
 
 
-                    string selectQuery = "SELECT * FROM karta";
+                    string selectQuery = "SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'";
                     using (SqlCommand cmd = new SqlCommand(selectQuery, con))
                     {
 
@@ -137,6 +145,24 @@ namespace SeminarskiRSOK
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();
+            form11.Show();
+            Visible = false;
         }
     }
 }

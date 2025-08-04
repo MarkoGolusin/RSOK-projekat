@@ -31,6 +31,8 @@
             button2 = new Button();
             dataGridView1 = new DataGridView();
             label1 = new Label();
+            button1 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -66,17 +68,44 @@
             label1.TabIndex = 5;
             label1.Text = "PREGLED KARATA";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(128, 255, 128);
+            button1.Font = new Font("Calibri", 15F, FontStyle.Bold);
+            button1.Location = new Point(31, 25);
+            button1.Name = "button1";
+            button1.Size = new Size(194, 31);
+            button1.TabIndex = 6;
+            button1.Text = "REZERVISANE KARTE";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(255, 128, 128);
+            button3.Font = new Font("Calibri", 15F, FontStyle.Bold);
+            button3.Location = new Point(279, 25);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 31);
+            button3.TabIndex = 7;
+            button3.Text = "RESET";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-            ClientSize = new Size(1207, 621);
+            ClientSize = new Size(1207, 511);
+            Controls.Add(button3);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Name = "Form7";
             Text = "Form7";
+            Load += Form7_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -87,5 +116,7 @@
         private Button button2;
         private DataGridView dataGridView1;
         private Label label1;
+        private Button button1;
+        private Button button3;
     }
 }

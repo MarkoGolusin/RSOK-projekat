@@ -17,6 +17,8 @@ namespace SeminarskiRSOK
         public Form2()
         {
             InitializeComponent();
+            txt_korisnickoImeAdmina.KeyDown += new KeyEventHandler(TextBox_KeyDown);
+            txt_lozinkaAdmina.KeyDown += new KeyEventHandler(TextBox_KeyDown);
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;");
@@ -41,6 +43,16 @@ namespace SeminarskiRSOK
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                // Call the button click event
+                button2_Click(sender, e);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

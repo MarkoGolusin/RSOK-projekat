@@ -42,6 +42,8 @@
             textBox4 = new TextBox();
             textBox5 = new TextBox();
             dataGridView1 = new DataGridView();
+            label7 = new Label();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,7 +51,7 @@
             // 
             button1.BackColor = Color.FromArgb(255, 192, 128);
             button1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(185, 415);
+            button1.Location = new Point(116, 395);
             button1.Name = "button1";
             button1.Size = new Size(151, 45);
             button1.TabIndex = 0;
@@ -61,7 +63,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(120, 113);
+            label1.Location = new Point(51, 113);
             label1.Name = "label1";
             label1.Size = new Size(52, 26);
             label1.TabIndex = 1;
@@ -71,7 +73,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(77, 165);
+            label2.Location = new Point(8, 165);
             label2.Name = "label2";
             label2.Size = new Size(95, 26);
             label2.TabIndex = 2;
@@ -81,7 +83,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(77, 222);
+            label3.Location = new Point(8, 222);
             label3.Name = "label3";
             label3.Size = new Size(95, 26);
             label3.TabIndex = 3;
@@ -91,7 +93,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(92, 280);
+            label4.Location = new Point(23, 280);
             label4.Name = "label4";
             label4.Size = new Size(80, 26);
             label4.TabIndex = 4;
@@ -101,7 +103,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(77, 338);
+            label5.Location = new Point(8, 338);
             label5.Name = "label5";
             label5.Size = new Size(95, 26);
             label5.TabIndex = 5;
@@ -111,7 +113,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(142, 27);
+            label6.Location = new Point(73, 27);
             label6.Name = "label6";
             label6.Size = new Size(276, 33);
             label6.TabIndex = 6;
@@ -121,7 +123,7 @@
             // 
             button2.BackColor = Color.FromArgb(128, 255, 255);
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1084, 27);
+            button2.Location = new Point(1502, 32);
             button2.Name = "button2";
             button2.Size = new Size(75, 31);
             button2.TabIndex = 7;
@@ -132,7 +134,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(185, 106);
+            textBox1.Location = new Point(116, 106);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(233, 33);
             textBox1.TabIndex = 8;
@@ -141,7 +143,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(185, 158);
+            textBox2.Location = new Point(116, 158);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(233, 33);
             textBox2.TabIndex = 9;
@@ -149,7 +151,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(185, 215);
+            textBox3.Location = new Point(116, 215);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(233, 33);
             textBox3.TabIndex = 10;
@@ -157,7 +159,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(185, 273);
+            textBox4.Location = new Point(116, 273);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(233, 33);
             textBox4.TabIndex = 11;
@@ -165,7 +167,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(185, 331);
+            textBox5.Location = new Point(116, 331);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(233, 33);
             textBox5.TabIndex = 12;
@@ -174,18 +176,41 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(472, 97);
+            dataGridView1.Location = new Point(400, 131);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(687, 267);
+            dataGridView1.Size = new Size(1177, 267);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Calibri", 20.25F, FontStyle.Bold);
+            label7.Location = new Point(708, 63);
+            label7.Name = "label7";
+            label7.Size = new Size(208, 33);
+            label7.TabIndex = 14;
+            label7.Text = "PREGLED KARATA";
+            label7.Click += label7_Click_1;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(482, 56);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 15;
+            button3.Text = "Pregled karte";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
             // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-            ClientSize = new Size(1182, 486);
+            ClientSize = new Size(1599, 469);
+            Controls.Add(button3);
+            Controls.Add(label7);
             Controls.Add(dataGridView1);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
@@ -223,5 +248,7 @@
         private TextBox textBox4;
         private TextBox textBox5;
         private DataGridView dataGridView1;
+        private Label label7;
+        private Button button3;
     }
 }

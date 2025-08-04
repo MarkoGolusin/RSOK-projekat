@@ -36,6 +36,7 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             pictureBox1.Size = new Size(811, 461);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
@@ -114,15 +116,28 @@
             button5.Name = "button5";
             button5.Size = new Size(152, 33);
             button5.TabIndex = 6;
-            button5.Text = "BRISANJE KARAZA";
+            button5.Text = "BRISANJE KARATA";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(255, 192, 128);
+            button6.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            button6.Location = new Point(326, 351);
+            button6.Name = "button6";
+            button6.Size = new Size(152, 48);
+            button6.TabIndex = 7;
+            button6.Text = "PREGLED KORISNIKA";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -146,5 +161,6 @@
         private Button button4;
         private Button button5;
         public Label label1;
+        private Button button6;
     }
 }

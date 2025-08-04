@@ -51,6 +51,9 @@ namespace SeminarskiRSOK
                         {
                             sda.Fill(dt);
                             dataGridView1.DataSource = dt;
+
+                            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+                            dataGridView1.DefaultCellStyle.BackColor = Color.White;
                         }
                     }
 
@@ -105,7 +108,7 @@ namespace SeminarskiRSOK
                         }
                     }
 
-                    
+
                     ResetTabele();
                 }
                 else
@@ -161,6 +164,11 @@ namespace SeminarskiRSOK
         }
 
         private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

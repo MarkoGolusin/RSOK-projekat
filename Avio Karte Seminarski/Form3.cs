@@ -26,8 +26,8 @@ namespace SeminarskiRSOK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.Show();
+            Form1 f1 = new Form1();
+            f1.Show();
             Visible = false;
         }
 
@@ -47,8 +47,20 @@ namespace SeminarskiRSOK
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form9 form9 = new Form9(); 
+            Form9 form9 = new Form9();
             form9.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
             this.Hide();
         }
     }

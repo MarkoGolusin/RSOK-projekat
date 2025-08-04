@@ -78,7 +78,7 @@
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(300, 220);
             button2.Name = "button2";
-            button2.Size = new Size(219, 69);
+            button2.Size = new Size(219, 46);
             button2.TabIndex = 3;
             button2.Text = "REZERVACIJA";
             button2.UseVisualStyleBackColor = false;
