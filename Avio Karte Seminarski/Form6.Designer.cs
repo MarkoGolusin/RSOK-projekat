@@ -42,13 +42,9 @@
             textBox4 = new TextBox();
             textBox5 = new TextBox();
             dataGridView1 = new DataGridView();
-<<<<<<< HEAD
             label7 = new Label();
-            button3 = new Button();
-=======
-            button3 = new Button();
-            button4 = new Button();
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
+           
+            
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -56,11 +52,8 @@
             // 
             button1.BackColor = Color.FromArgb(255, 192, 128);
             button1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-<<<<<<< HEAD
             button1.Location = new Point(116, 395);
-=======
             button1.Location = new Point(185, 395);
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
             button1.Name = "button1";
             button1.Size = new Size(151, 45);
             button1.TabIndex = 0;
@@ -132,11 +125,8 @@
             // 
             button2.BackColor = Color.FromArgb(128, 255, 255);
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-<<<<<<< HEAD
             button2.Location = new Point(1502, 32);
-=======
             button2.Location = new Point(1574, 32);
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
             button2.Name = "button2";
             button2.Size = new Size(75, 31);
             button2.TabIndex = 7;
@@ -195,7 +185,6 @@
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-<<<<<<< HEAD
             // label7
             // 
             label7.AutoSize = true;
@@ -207,55 +196,20 @@
             label7.Text = "PREGLED KARATA";
             label7.Click += label7_Click_1;
             // 
-            // button3
-            // 
-            button3.Location = new Point(482, 56);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 15;
-            button3.Text = "Pregled karte";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click_1;
-=======
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(128, 255, 128);
-            button3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(472, 46);
-            button3.Name = "button3";
-            button3.Size = new Size(170, 34);
-            button3.TabIndex = 16;
-            button3.Text = "SLOBODNE KARTE";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(255, 128, 128);
-            button4.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(648, 46);
-            button4.Name = "button4";
-            button4.Size = new Size(87, 33);
-            button4.TabIndex = 17;
-            button4.Text = "RESET";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
+          
+            
             // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-<<<<<<< HEAD
             ClientSize = new Size(1599, 469);
-            Controls.Add(button3);
+
             Controls.Add(label7);
-=======
             ClientSize = new Size(1675, 469);
             Controls.Add(button4);
-            Controls.Add(button3);
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
+     
             Controls.Add(dataGridView1);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
@@ -293,12 +247,8 @@
         private TextBox textBox4;
         private TextBox textBox5;
         private DataGridView dataGridView1;
-<<<<<<< HEAD
         private Label label7;
-        private Button button3;
-=======
-        private Button button3;
+
         private Button button4;
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
     }
 }

@@ -56,7 +56,6 @@ namespace SeminarskiRSOK
         {
 
         }
-<<<<<<< HEAD
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -64,7 +63,5 @@ namespace SeminarskiRSOK
             form10.Show();
             this.Hide();
         }
-=======
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
     }
 }

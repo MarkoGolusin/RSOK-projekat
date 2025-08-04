@@ -98,11 +98,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
             ClientSize = new Size(1207, 511);
-<<<<<<< HEAD
             Controls.Add(button3);
             Controls.Add(button1);
-=======
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(button2);

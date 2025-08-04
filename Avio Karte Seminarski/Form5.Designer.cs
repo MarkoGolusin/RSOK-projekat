@@ -78,15 +78,15 @@
             label6.ForeColor = Color.Black;
             label6.Location = new Point(456, 12);
             label6.Name = "label6";
-<<<<<<< HEAD
+
             label6.Size = new Size(171, 33);
             label6.TabIndex = 7;
             label6.Text = "Brisanje karte";
-=======
+
             label6.Size = new Size(276, 33);
             label6.TabIndex = 7;
             label6.Text = "REGISTRACIJA PUTNIKA";
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
+
             label6.Click += label6_Click;
             // 
             // Form5

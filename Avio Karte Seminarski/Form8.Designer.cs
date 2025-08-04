@@ -90,10 +90,7 @@
             // 
             // textBox2
             // 
-<<<<<<< HEAD
             textBox2.Enabled = false;
-=======
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
             textBox2.Font = new Font("Calibri", 15.75F, FontStyle.Bold);
             textBox2.Location = new Point(197, 148);
             textBox2.Name = "textBox2";
@@ -103,10 +100,7 @@
             // 
             // textBox3
             // 
-<<<<<<< HEAD
             textBox3.Enabled = false;
-=======
->>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
             textBox3.Font = new Font("Calibri", 15.75F, FontStyle.Bold);
             textBox3.Location = new Point(197, 197);
             textBox3.Name = "textBox3";

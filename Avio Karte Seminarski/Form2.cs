@@ -21,7 +21,7 @@ namespace SeminarskiRSOK
             txt_lozinkaAdmina.KeyDown += new KeyEventHandler(TextBox_KeyDown);
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;");
 
         private void button1_Click(object sender, EventArgs e)
         {
