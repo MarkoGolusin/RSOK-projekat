@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "G4InKGQFJwDNFR2SmxRKLnHFFRb1E+YL3J5Qds4Y6CKuZdWPjWvEULkr651NwYnMA8g/oK8e/jlg2P6TSzKLyg==",
+  "dgSpecHash": "mRYVwX2GvxwGZR9TqPXSV7TSejnXcJYrRBBBw5CTDLs8ief+O2pS5HBx8WiVvv8Z2GMg+iUPy35TBdTgm7PZcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+  "projectFilePath": "C:\\Users\\Markan\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jerkov\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Jerkov\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Jerkov\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Jerkov\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Jerkov\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
+    "C:\\Users\\Markan\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Markan\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Markan\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Markan\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Markan\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
   ],
   "logs": []
 }
