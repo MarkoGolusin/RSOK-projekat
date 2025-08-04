@@ -90,6 +90,7 @@ namespace SeminarskiRSOK
 
         private void Form9_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             dataGridView1.CellClick += dataGridView1_CellClick;
         }
 
@@ -116,6 +117,9 @@ namespace SeminarskiRSOK
 
             MessageBox.Show("Podaci su uspešno izmenjeni");
             BinGrid();
+=======
+
+>>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
         }
     }
 }

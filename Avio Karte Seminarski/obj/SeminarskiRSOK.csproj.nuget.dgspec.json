@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Markan\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {}
+    "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Markan\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {
+    "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Markan\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+        "projectUniqueName": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
         "projectName": "SeminarskiRSOK",
-        "projectPath": "C:\\Users\\Markan\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
-        "packagesPath": "C:\\Users\\Markan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Markan\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\obj\\",
+        "projectPath": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+        "packagesPath": "C:\\Users\\Jerkov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jerkov\\Documents\\GitHub\\RSOK-projekat\\Avio Karte Seminarski\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Markan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jerkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

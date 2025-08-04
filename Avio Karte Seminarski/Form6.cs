@@ -22,7 +22,7 @@ namespace SeminarskiRSOK
 
         private void binDataGrid()
         {
-            string constring = "Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+            string constring = "Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
 
@@ -40,7 +40,7 @@ namespace SeminarskiRSOK
 
         private void BinGrid()
         {
-            string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+            string constring = @"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
                 using (SqlCommand cmd = new SqlCommand("SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'", con))
@@ -80,12 +80,19 @@ namespace SeminarskiRSOK
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 int idKarte = (int)dataGridView1.CurrentRow.Cells[0].Value;
                 SqlConnection con = new SqlConnection("Data Source = DESKTOP-1VNGR39; Initial Catalog = AvioKarte; Integrated Security = True;");
                 con.Open();
                 SqlCommand cmd = new SqlCommand("insert into korisnik values (@imeKorisnika, @prezimeKorisnika, @emailKorisnika, @telefonKorisnika, @lozinkaKorisnika) UPDATE karta SET imePutnika=@imeKorisnika, prezimePutnika=@prezimeKorisnika WHERE idKarte=@idKarte", con);
+=======
+            int idKarte = (int)dataGridView1.CurrentRow.Cells[0].Value;
+            SqlConnection con = new SqlConnection("Data Source = DESKTOP-DMH1A5F; Initial Catalog = AvioKarte; Integrated Security = True;");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into korisnik values (@imeKorisnika, @prezimeKorisnika, @emailKorisnika, @telefonKorisnika, @lozinkaKorisnika) UPDATE karta SET imePutnika=@imeKorisnika, prezimePutnika=@prezimeKorisnika WHERE idKarte=@idKarte", con);
+>>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
 
                 cmd.Parameters.AddWithValue("@imeKorisnika", textBox1.Text);
                 cmd.Parameters.AddWithValue("@prezimeKorisnika", textBox2.Text);
@@ -112,7 +119,7 @@ namespace SeminarskiRSOK
         {
             try
             {
-                string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+                string constring = @"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;";
                 using (SqlConnection con = new SqlConnection(constring))
                 {
 
@@ -152,6 +159,7 @@ namespace SeminarskiRSOK
 
         }
 
+<<<<<<< HEAD
         private void label7_Click_1(object sender, EventArgs e)
         {
 
@@ -163,6 +171,74 @@ namespace SeminarskiRSOK
             Form11 form11 = new Form11();
             form11.Show();
             Visible = false;
+=======
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string constring = @"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;";
+                using (SqlConnection con = new SqlConnection(constring))
+                {
+
+                    con.Open();
+
+
+                    string selectQuery = "SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'";
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+                    {
+
+                        DataTable dt = new DataTable();
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+
+                            da.Fill(dt);
+                        }
+
+
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Greska " + ex.Message);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string constring = @"Data Source=DESKTOP-DMH1A5F;Initial Catalog=AvioKarte;Integrated Security=True;";
+                using (SqlConnection con = new SqlConnection(constring))
+                {
+
+                    con.Open();
+
+
+                    string selectQuery = "SELECT * FROM karta";
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+                    {
+
+                        DataTable dt = new DataTable();
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+
+                            da.Fill(dt);
+                        }
+
+
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Greska " + ex.Message);
+            }
+>>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
         }
     }
 }

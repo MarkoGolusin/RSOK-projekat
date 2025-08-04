@@ -189,6 +189,7 @@ C:\Users\Jerkov\Documents\GitHub\RSOK-projekat\Avio Karte Seminarski\obj\Debug\n
 C:\Users\Jerkov\Documents\GitHub\RSOK-projekat\Avio Karte Seminarski\obj\Debug\net8.0-windows\SeminarskiRSOK.pdb
 C:\Users\Jerkov\Documents\GitHub\RSOK-projekat\Avio Karte Seminarski\obj\Debug\net8.0-windows\SeminarskiRSOK.genruntimeconfig.cache
 C:\Users\Jerkov\Documents\GitHub\RSOK-projekat\Avio Karte Seminarski\obj\Debug\net8.0-windows\ref\SeminarskiRSOK.dll
+<<<<<<< HEAD
 C:\Users\sakib\OneDrive\Радна површина\RSOK-projekat KOPI\Avio Karte Seminarski\bin\Debug\net8.0-windows\SeminarskiRSOK.exe
 C:\Users\sakib\OneDrive\Радна површина\RSOK-projekat KOPI\Avio Karte Seminarski\bin\Debug\net8.0-windows\SeminarskiRSOK.deps.json
 C:\Users\sakib\OneDrive\Радна површина\RSOK-projekat KOPI\Avio Karte Seminarski\bin\Debug\net8.0-windows\SeminarskiRSOK.runtimeconfig.json
@@ -294,3 +295,5 @@ C:\Users\Markan\Desktop\Avio Karte Seminarski\obj\Debug\net8.0-windows\refint\Se
 C:\Users\Markan\Desktop\Avio Karte Seminarski\obj\Debug\net8.0-windows\SeminarskiRSOK.pdb
 C:\Users\Markan\Desktop\Avio Karte Seminarski\obj\Debug\net8.0-windows\SeminarskiRSOK.genruntimeconfig.cache
 C:\Users\Markan\Desktop\Avio Karte Seminarski\obj\Debug\net8.0-windows\ref\SeminarskiRSOK.dll
+=======
+>>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2

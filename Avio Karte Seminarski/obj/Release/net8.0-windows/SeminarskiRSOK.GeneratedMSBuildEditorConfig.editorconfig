@@ -14,6 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SeminarskiRSOK
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Markan\Desktop\Avio Karte Seminarski\
+=======
+build_property.ProjectDir = C:\Users\Jerkov\Documents\GitHub\RSOK-projekat\Avio Karte Seminarski\
+>>>>>>> aff740f5ed80fd55d8379e084f5dfe1d2b4fedb2
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
