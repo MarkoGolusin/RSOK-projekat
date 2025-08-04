@@ -326,6 +326,7 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(button2);
+            MaximizeBox = false;
             Name = "Form8";
             Text = "Form8";
             Load += Form8_Load;

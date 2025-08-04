@@ -37,28 +37,31 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(426, 12);
+            dataGridView1.Location = new Point(27, 92);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(483, 241);
+            dataGridView1.Size = new Size(860, 289);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 12);
+            button1.BackColor = Color.FromArgb(128, 255, 255);
+            button1.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            button1.Location = new Point(802, 12);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(95, 33);
             button1.TabIndex = 2;
             button1.Text = "NAZAD";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(151, 18);
+            label1.Font = new Font("Calibri", 20.25F, FontStyle.Bold);
+            label1.Location = new Point(337, 12);
             label1.Name = "label1";
-            label1.Size = new Size(116, 15);
+            label1.Size = new Size(244, 33);
             label1.TabIndex = 3;
             label1.Text = "PREGLED KORISNIKA";
             // 
@@ -66,10 +69,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.PregledKarataPozadina;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(921, 450);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
+            MaximizeBox = false;
             Name = "Form10";
             Text = "Form10";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

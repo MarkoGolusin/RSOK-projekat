@@ -43,7 +43,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(-205, -299);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1026, 765);
+            pictureBox1.Size = new Size(1032, 765);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -107,6 +107,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            MaximizeBox = false;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

@@ -136,6 +136,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            MaximizeBox = false;
             Name = "Form2";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -61,6 +61,7 @@
             ClientSize = new Size(531, 621);
             Controls.Add(dataGridView2);
             Controls.Add(button1);
+            MaximizeBox = false;
             Name = "Form4";
             Text = "Form4";
             Load += Form4_Load_1;

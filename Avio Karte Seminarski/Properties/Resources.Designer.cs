@@ -63,6 +63,16 @@ namespace SeminarskiRSOK.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PozadinaAdminKorisnika {
+            get {
+                object obj = ResourceManager.GetObject("PozadinaAdminKorisnika", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PregledKarataPozadina {
             get {
                 object obj = ResourceManager.GetObject("PregledKarataPozadina", resourceCulture);

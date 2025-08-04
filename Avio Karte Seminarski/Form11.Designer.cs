@@ -44,12 +44,14 @@
             // 
             // button1
             // 
-            button1.Location = new Point(713, 12);
+            button1.BackColor = Color.FromArgb(128, 255, 255);
+            button1.Font = new Font("Calibri", 12F, FontStyle.Bold);
+            button1.Location = new Point(709, 12);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(79, 31);
             button1.TabIndex = 1;
             button1.Text = "NAZAD";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label10
@@ -149,6 +151,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.PozadinaAdminKorisnika;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
             Controls.Add(label10);
@@ -161,6 +165,7 @@
             Controls.Add(button3);
             Controls.Add(label7);
             Controls.Add(button1);
+            MaximizeBox = false;
             Name = "Form11";
             Text = "Form11";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

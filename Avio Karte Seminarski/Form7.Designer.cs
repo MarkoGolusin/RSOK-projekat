@@ -103,6 +103,7 @@
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
+            MaximizeBox = false;
             Name = "Form7";
             Text = "Form7";
             Load += Form7_Load_1;

@@ -78,15 +78,9 @@
             label6.ForeColor = Color.Black;
             label6.Location = new Point(456, 12);
             label6.Name = "label6";
-
-            label6.Size = new Size(171, 33);
-            label6.TabIndex = 7;
-            label6.Text = "Brisanje karte";
-
             label6.Size = new Size(276, 33);
             label6.TabIndex = 7;
             label6.Text = "REGISTRACIJA PUTNIKA";
-
             label6.Click += label6_Click;
             // 
             // Form5
@@ -100,6 +94,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             ForeColor = SystemColors.ControlLightLight;
+            MaximizeBox = false;
             Name = "Form5";
             Text = "Form5";
             Load += Form5_Load;

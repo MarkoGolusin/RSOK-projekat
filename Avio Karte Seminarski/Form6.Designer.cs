@@ -43,8 +43,6 @@
             textBox5 = new TextBox();
             dataGridView1 = new DataGridView();
             label7 = new Label();
-           
-            
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +50,6 @@
             // 
             button1.BackColor = Color.FromArgb(255, 192, 128);
             button1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(116, 395);
             button1.Location = new Point(185, 395);
             button1.Name = "button1";
             button1.Size = new Size(151, 45);
@@ -125,7 +122,6 @@
             // 
             button2.BackColor = Color.FromArgb(128, 255, 255);
             button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1502, 32);
             button2.Location = new Point(1574, 32);
             button2.Name = "button2";
             button2.Size = new Size(75, 31);
@@ -196,20 +192,13 @@
             label7.Text = "PREGLED KARATA";
             label7.Click += label7_Click_1;
             // 
-          
-            
-            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
-            ClientSize = new Size(1599, 469);
-
-            Controls.Add(label7);
             ClientSize = new Size(1675, 469);
-            Controls.Add(button4);
-     
+            Controls.Add(label7);
             Controls.Add(dataGridView1);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
@@ -224,6 +213,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
+            MaximizeBox = false;
             Name = "Form6";
             Load += Form6_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

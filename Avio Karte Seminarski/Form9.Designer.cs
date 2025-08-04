@@ -330,6 +330,7 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(button2);
+            MaximizeBox = false;
             Name = "Form9";
             Text = "Form9";
             Load += Form9_Load;
