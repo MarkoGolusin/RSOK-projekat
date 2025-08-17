@@ -50,8 +50,8 @@
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
-            dtpDatum = new DateTimePicker();
-            chkUseDatum = new CheckBox();
+            label11 = new Label();
+            txtdatumP = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -214,7 +214,7 @@
             // 
             btnFilter.BackColor = Color.DeepSkyBlue;
             btnFilter.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            btnFilter.Location = new Point(1700, 101);
+            btnFilter.Location = new Point(1717, 101);
             btnFilter.Name = "btnFilter";
             btnFilter.Size = new Size(102, 40);
             btnFilter.TabIndex = 15;
@@ -226,12 +226,12 @@
             // 
             txtKlasa.Location = new Point(549, 111);
             txtKlasa.Name = "txtKlasa";
-            txtKlasa.Size = new Size(103, 27);
+            txtKlasa.Size = new Size(92, 27);
             txtKlasa.TabIndex = 16;
             // 
             // txtPoletanje
             // 
-            txtPoletanje.Location = new Point(855, 109);
+            txtPoletanje.Location = new Point(843, 110);
             txtPoletanje.Name = "txtPoletanje";
             txtPoletanje.Size = new Size(149, 27);
             txtPoletanje.TabIndex = 17;
@@ -239,7 +239,7 @@
             // 
             // txtSletanje
             // 
-            txtSletanje.Location = new Point(1211, 109);
+            txtSletanje.Location = new Point(1195, 110);
             txtSletanje.Name = "txtSletanje";
             txtSletanje.Size = new Size(139, 27);
             txtSletanje.TabIndex = 18;
@@ -259,7 +259,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            label9.Location = new Point(658, 106);
+            label9.Location = new Point(647, 106);
             label9.Name = "label9";
             label9.Size = new Size(202, 31);
             label9.TabIndex = 20;
@@ -270,31 +270,30 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            label10.Location = new Point(1010, 105);
+            label10.Location = new Point(998, 106);
             label10.Name = "label10";
             label10.Size = new Size(202, 31);
             label10.TabIndex = 21;
             label10.Text = "Mesto dolaska";
             label10.Click += label10_Click;
             // 
-            // dtpDatum
+            // label11
             // 
-            dtpDatum.Location = new Point(1398, 107);
-            dtpDatum.Name = "dtpDatum";
-            dtpDatum.Size = new Size(250, 27);
-            dtpDatum.TabIndex = 22;
+            label11.AutoSize = true;
+            label11.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
+            label11.Location = new Point(1331, 105);
+            label11.Name = "label11";
+            label11.Size = new Size(226, 31);
+            label11.TabIndex = 22;
+            label11.Text = "Datum poletanja";
             // 
-            // chkUseDatum
+            // txtdatumP
             // 
-            chkUseDatum.AutoSize = true;
-            chkUseDatum.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            chkUseDatum.Location = new Point(1398, 77);
-            chkUseDatum.Name = "chkUseDatum";
-            chkUseDatum.Size = new Size(198, 24);
-            chkUseDatum.TabIndex = 23;
-            chkUseDatum.Text = "FILTRIRAJ PO DATUMU";
-            chkUseDatum.UseVisualStyleBackColor = true;
-            chkUseDatum.CheckedChanged += checkBox1_CheckedChanged;
+            txtdatumP.Location = new Point(1563, 109);
+            txtdatumP.Name = "txtdatumP";
+            txtdatumP.Size = new Size(148, 27);
+            txtdatumP.TabIndex = 23;
+            txtdatumP.TextChanged += textBox6_TextChanged;
             // 
             // Form6
             // 
@@ -302,8 +301,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
             ClientSize = new Size(1914, 625);
-            Controls.Add(chkUseDatum);
-            Controls.Add(dtpDatum);
+            Controls.Add(txtdatumP);
+            Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -361,7 +360,7 @@
         private Label label8;
         private Label label9;
         private Label label10;
-        private DateTimePicker dtpDatum;
-        private CheckBox chkUseDatum;
+        private Label label11;
+        private TextBox txtdatumP;
     }
 }

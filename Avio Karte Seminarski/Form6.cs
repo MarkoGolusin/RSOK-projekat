@@ -159,8 +159,9 @@ namespace SeminarskiRSOK
                 if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
                     query.Append(" AND sletanje LIKE @sletanje");
 
-                if (chkUseDatum.Checked)
-                    query.Append(" AND datumPoletanja = @datum");
+                if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
+                    query.Append(" AND sletanje LIKE @datumPoletanja");
+
 
                 using (SqlCommand cmd = new SqlCommand(query.ToString(), con))
                 {
@@ -173,8 +174,8 @@ namespace SeminarskiRSOK
                     if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
                         cmd.Parameters.AddWithValue("@sletanje", "%" + txtSletanje.Text + "%");
 
-                    if (chkUseDatum.Checked)
-                        cmd.Parameters.AddWithValue("@datum", dtpDatum.Value.ToString("dd.MM.yyyy"));
+                    if (!string.IsNullOrWhiteSpace(txtdatumP.Text))
+                        cmd.Parameters.AddWithValue("@datumPoletanja", "%" + txtdatumP.Text + "%");
 
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                     {
@@ -212,7 +213,7 @@ namespace SeminarskiRSOK
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
         }
