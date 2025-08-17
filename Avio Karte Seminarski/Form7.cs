@@ -25,19 +25,16 @@ namespace SeminarskiRSOK
             form3.Show();
             this.Hide();
         }
+
         private void binDataGrid()
         {
             string constring = "Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;Trust Server Certificate=True";
             using (SqlConnection con = new SqlConnection(constring))
             {
-
-
-
-
+                // currently unused
             }
-
-
         }
+
         private void Form7_Load(object sender, EventArgs e)
         {
             this.BinGrid();
@@ -50,7 +47,6 @@ namespace SeminarskiRSOK
             {
                 using (SqlCommand cmd = new SqlCommand("Select * FROM karta", con))
                 {
-
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                     {
                         using (DataTable dt = new DataTable())
@@ -59,16 +55,13 @@ namespace SeminarskiRSOK
                             dataGridView1.DataSource = dt;
                         }
                     }
-
                 }
-
-
             }
         }
 
         private void Form7_Load_1(object sender, EventArgs e)
         {
-
+            // not used
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -78,52 +71,69 @@ namespace SeminarskiRSOK
             string selectQuery = "SELECT * FROM karta where imePutnika!='nije rezervisano' AND prezimePutnika!='nije rezervisano'";
             using (SqlCommand cmd = new SqlCommand(selectQuery, con))
             {
-
                 DataTable dt = new DataTable();
                 using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
-
                     da.Fill(dt);
                 }
-
-
                 dataGridView1.DataSource = dt;
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-                try
+            try
+            {
+                string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+                using (SqlConnection con = new SqlConnection(constring))
                 {
-                    string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
-                    using (SqlConnection con = new SqlConnection(constring))
+                    con.Open();
+                    string selectQuery = "SELECT * FROM karta";
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, con))
                     {
-
-                        con.Open();
-
-
-                        string selectQuery = "SELECT * FROM karta";
-                        using (SqlCommand cmd = new SqlCommand(selectQuery, con))
+                        DataTable dt = new DataTable();
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
-
-                            DataTable dt = new DataTable();
-                            using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                            {
-
-                                da.Fill(dt);
-                            }
-
-
-                            dataGridView1.DataSource = dt;
+                            da.Fill(dt);
                         }
+                        dataGridView1.DataSource = dt;
                     }
                 }
-                catch (Exception ex)
-                {
-
-                    MessageBox.Show("Greska pri prikazivanju nove tabele " + ex.Message);
-                }
             }
-        
+            catch (Exception ex)
+            {
+                MessageBox.Show("Greska pri prikazivanju nove tabele " + ex.Message);
+            }
         }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow != null)
+            {
+                int idKarte = Convert.ToInt32(dataGridView1.CurrentRow.Cells["idKarte"].Value);
+
+                string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+                using (SqlConnection con = new SqlConnection(constring))
+                {
+                    con.Open();
+                    string updateQuery = "UPDATE karta SET imePutnika = 'nije rezervisano', prezimePutnika = 'nije rezervisano' WHERE idKarte = @id";
+                    using (SqlCommand cmd = new SqlCommand(updateQuery, con))
+                    {
+                        cmd.Parameters.AddWithValue("@id", idKarte);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+
+                BinGrid();
+
+                MessageBox.Show("Karta je ponovo dostupna (nije rezervisano).");
+            }
+            else
+            {
+                MessageBox.Show("Molimo izaberite red iz tabele.");
+            }
+        }
+    }
 }
