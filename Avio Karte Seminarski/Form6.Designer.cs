@@ -50,6 +50,8 @@
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
+            dtpDatum = new DateTimePicker();
+            chkUseDatum = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -212,7 +214,7 @@
             // 
             btnFilter.BackColor = Color.DeepSkyBlue;
             btnFilter.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold);
-            btnFilter.Location = new Point(1614, 99);
+            btnFilter.Location = new Point(1700, 101);
             btnFilter.Name = "btnFilter";
             btnFilter.Size = new Size(102, 40);
             btnFilter.TabIndex = 15;
@@ -275,12 +277,33 @@
             label10.Text = "Mesto dolaska";
             label10.Click += label10_Click;
             // 
+            // dtpDatum
+            // 
+            dtpDatum.Location = new Point(1398, 107);
+            dtpDatum.Name = "dtpDatum";
+            dtpDatum.Size = new Size(250, 27);
+            dtpDatum.TabIndex = 22;
+            // 
+            // chkUseDatum
+            // 
+            chkUseDatum.AutoSize = true;
+            chkUseDatum.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chkUseDatum.Location = new Point(1398, 77);
+            chkUseDatum.Name = "chkUseDatum";
+            chkUseDatum.Size = new Size(198, 24);
+            chkUseDatum.TabIndex = 23;
+            chkUseDatum.Text = "FILTRIRAJ PO DATUMU";
+            chkUseDatum.UseVisualStyleBackColor = true;
+            chkUseDatum.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(136, 204, 227);
             ClientSize = new Size(1914, 625);
+            Controls.Add(chkUseDatum);
+            Controls.Add(dtpDatum);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -338,5 +361,7 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private DateTimePicker dtpDatum;
+        private CheckBox chkUseDatum;
     }
 }

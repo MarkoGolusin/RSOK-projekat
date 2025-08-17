@@ -140,7 +140,7 @@ namespace SeminarskiRSOK
             Visible = false;
         }
 
-   
+
 
         private void ApplyFilter()
         {
@@ -148,6 +148,7 @@ namespace SeminarskiRSOK
             using (SqlConnection con = new SqlConnection(constring))
             {
                 StringBuilder query = new StringBuilder("SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'");
+
 
                 if (!string.IsNullOrWhiteSpace(txtKlasa.Text))
                     query.Append(" AND klasa LIKE @klasa");
@@ -157,6 +158,9 @@ namespace SeminarskiRSOK
 
                 if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
                     query.Append(" AND sletanje LIKE @sletanje");
+
+                if (chkUseDatum.Checked)
+                    query.Append(" AND datumPoletanja = @datum");
 
                 using (SqlCommand cmd = new SqlCommand(query.ToString(), con))
                 {
@@ -169,6 +173,9 @@ namespace SeminarskiRSOK
                     if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
                         cmd.Parameters.AddWithValue("@sletanje", "%" + txtSletanje.Text + "%");
 
+                    if (chkUseDatum.Checked)
+                        cmd.Parameters.AddWithValue("@datum", dtpDatum.Value.ToString("dd.MM.yyyy"));
+
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                     {
                         DataTable dt = new DataTable();
@@ -178,6 +185,7 @@ namespace SeminarskiRSOK
                 }
             }
         }
+
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
@@ -200,6 +208,11 @@ namespace SeminarskiRSOK
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
