@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeminarskiRSOK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0aeeae4e87823a756f2616b0434ce08a4d938dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00b7999cf4669288e25bd05caaa114784990907f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeminarskiRSOK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeminarskiRSOK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

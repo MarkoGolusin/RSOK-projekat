@@ -5,6 +5,7 @@ namespace SeminarskiRSOK
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,6 +42,29 @@ namespace SeminarskiRSOK
             Form11 f11 = new Form11();
             f11.Show();
             Visible = false;
+        }
+
+        private void BtnFacebook_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://www.facebook.com/tfMihajloPupin/",
+                UseShellExecute = true
+            });
+        }
+
+        private void BtnInstagram_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/tfzr_mihajlopupin/?hl=en",
+                UseShellExecute = true
+            });
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
