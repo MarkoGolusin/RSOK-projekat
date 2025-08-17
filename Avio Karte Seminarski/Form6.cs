@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SeminarskiRSOK
 {
@@ -25,14 +24,9 @@ namespace SeminarskiRSOK
             string constring = "Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
             using (SqlConnection con = new SqlConnection(constring))
             {
-
-
-
-
             }
-
-
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.BinGrid();
@@ -45,7 +39,6 @@ namespace SeminarskiRSOK
             {
                 using (SqlCommand cmd = new SqlCommand("SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'", con))
                 {
-
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                     {
                         using (DataTable dt = new DataTable())
@@ -54,16 +47,12 @@ namespace SeminarskiRSOK
                             dataGridView1.DataSource = dt;
                         }
                     }
-
                 }
-
-
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,7 +64,6 @@ namespace SeminarskiRSOK
 
         private void Form6_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -103,7 +91,6 @@ namespace SeminarskiRSOK
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show("Niste popunili sva polja!");
             }
         }
@@ -115,48 +102,36 @@ namespace SeminarskiRSOK
                 string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
                 using (SqlConnection con = new SqlConnection(constring))
                 {
-
                     con.Open();
-
-
                     string selectQuery = "SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'";
                     using (SqlCommand cmd = new SqlCommand(selectQuery, con))
                     {
-
                         DataTable dt = new DataTable();
                         using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
-
                             da.Fill(dt);
                         }
-
-
                         dataGridView1.DataSource = dt;
                     }
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show("Greska pri prikazivanju nove tabele " + ex.Message);
             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label7_Click_1(object sender, EventArgs e)
         {
-
         }
-
 
         private void button3_Click_1(object sender, EventArgs e)
         {
@@ -164,5 +139,70 @@ namespace SeminarskiRSOK
             form11.Show();
             Visible = false;
         }
+
+   
+
+        private void ApplyFilter()
+        {
+            string constring = @"Data Source=DESKTOP-1VNGR39;Initial Catalog=AvioKarte;Integrated Security=True;";
+            using (SqlConnection con = new SqlConnection(constring))
+            {
+                StringBuilder query = new StringBuilder("SELECT * FROM karta WHERE imePutnika = 'nije rezervisano' AND prezimePutnika = 'nije rezervisano'");
+
+                if (!string.IsNullOrWhiteSpace(txtKlasa.Text))
+                    query.Append(" AND klasa LIKE @klasa");
+
+                if (!string.IsNullOrWhiteSpace(txtPoletanje.Text))
+                    query.Append(" AND poletanje LIKE @poletanje");
+
+                if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
+                    query.Append(" AND sletanje LIKE @sletanje");
+
+                using (SqlCommand cmd = new SqlCommand(query.ToString(), con))
+                {
+                    if (!string.IsNullOrWhiteSpace(txtKlasa.Text))
+                        cmd.Parameters.AddWithValue("@klasa", "%" + txtKlasa.Text + "%");
+
+                    if (!string.IsNullOrWhiteSpace(txtPoletanje.Text))
+                        cmd.Parameters.AddWithValue("@poletanje", "%" + txtPoletanje.Text + "%");
+
+                    if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
+                        cmd.Parameters.AddWithValue("@sletanje", "%" + txtSletanje.Text + "%");
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+            }
+        }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            ApplyFilter();
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
