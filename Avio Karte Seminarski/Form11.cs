@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+
 
 namespace SeminarskiRSOK
 {
@@ -109,5 +113,66 @@ namespace SeminarskiRSOK
             ResetTabele();
         }
 
+        private void buttonPrintPdf_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Molimo izaberite kartu iz tabele!");
+                return;
+            }
+
+            DataGridViewRow row = dataGridView1.SelectedRows[0];
+
+            string idKarte = row.Cells["idKarte"].Value.ToString();
+            string ime = row.Cells["imePutnika"].Value.ToString();
+            string prezime = row.Cells["prezimePutnika"].Value.ToString();
+            string poletanje = row.Cells["poletanje"].Value.ToString();
+            string sletanje = row.Cells["sletanje"].Value.ToString();
+            string klasa = row.Cells["klasa"].Value.ToString();
+            string vreme = row.Cells["vremePoletanja"].Value.ToString();
+            string datum = row.Cells["datumPoletanja"].Value.ToString();
+            string sediste = row.Cells["sediste"].Value.ToString();
+            string brojLeta = row.Cells["brojLeta"].Value.ToString();
+            string kapija = row.Cells["kapija"].Value.ToString();
+
+
+            string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string filePath = Path.Combine(folderPath, $"Karta_{idKarte}.pdf");
+
+            try
+            {
+                Document doc = new Document(PageSize.A4);
+                PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+                doc.Open();
+
+
+                Paragraph title = new Paragraph("Avio Karta", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 20));
+                title.Alignment = Element.ALIGN_CENTER;
+                doc.Add(title);
+                doc.Add(new Paragraph("\n"));
+
+
+                doc.Add(new Paragraph($"ID karte: {idKarte}"));
+                doc.Add(new Paragraph($"Putnik: {ime} {prezime}"));
+                doc.Add(new Paragraph($"Polazak: {poletanje}"));
+                doc.Add(new Paragraph($"Sletanje: {sletanje}"));
+                doc.Add(new Paragraph($"Klasa: {klasa}"));
+                doc.Add(new Paragraph($"Datum: {datum}"));
+                doc.Add(new Paragraph($"Vreme: {vreme}"));
+                doc.Add(new Paragraph($"Sedište: {sediste}"));
+                doc.Add(new Paragraph($"Broj leta: {brojLeta}"));
+                doc.Add(new Paragraph($"Kapija: {kapija}"));
+
+                doc.Close();
+
+                MessageBox.Show($"PDF karta je uspešno sačuvana na: {filePath}");
+
+                System.Diagnostics.Process.Start(filePath);
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
     }
 }
