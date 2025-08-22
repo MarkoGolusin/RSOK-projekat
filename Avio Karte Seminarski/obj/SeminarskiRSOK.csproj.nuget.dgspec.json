@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dusan\\Desktop\\projekat RSOK\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {}
+    "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dusan\\Desktop\\projekat RSOK\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {
+    "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dusan\\Desktop\\projekat RSOK\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+        "projectUniqueName": "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
         "projectName": "SeminarskiRSOK",
-        "projectPath": "C:\\Users\\Dusan\\Desktop\\projekat RSOK\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+        "projectPath": "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
         "packagesPath": "C:\\Users\\Dusan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dusan\\Desktop\\projekat RSOK\\Avio Karte Seminarski\\obj\\",
+        "outputPath": "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

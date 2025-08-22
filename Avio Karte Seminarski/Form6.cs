@@ -159,7 +159,7 @@ namespace SeminarskiRSOK
                 if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
                     query.Append(" AND sletanje LIKE @sletanje");
 
-                if (!string.IsNullOrWhiteSpace(txtSletanje.Text))
+                if (!string.IsNullOrWhiteSpace(txtdatumP.Text))
                     query.Append(" AND sletanje LIKE @datumPoletanja");
 
 
