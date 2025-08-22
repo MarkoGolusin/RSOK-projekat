@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {}
+    "C:\\Users\\Markan\\Desktop\\proj opet\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {
+    "C:\\Users\\Markan\\Desktop\\proj opet\\Avio Karte Seminarski\\SeminarskiRSOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+        "projectUniqueName": "C:\\Users\\Markan\\Desktop\\proj opet\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
         "projectName": "SeminarskiRSOK",
-        "projectPath": "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
-        "packagesPath": "C:\\Users\\Dusan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dusan\\Source\\Repos\\RSOK-projekat\\Avio Karte Seminarski\\obj\\",
+        "projectPath": "C:\\Users\\Markan\\Desktop\\proj opet\\Avio Karte Seminarski\\SeminarskiRSOK.csproj",
+        "packagesPath": "C:\\Users\\Markan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Markan\\Desktop\\proj opet\\Avio Karte Seminarski\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dusan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Markan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -78,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

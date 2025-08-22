@@ -78,9 +78,9 @@
             label6.ForeColor = Color.Black;
             label6.Location = new Point(456, 12);
             label6.Name = "label6";
-            label6.Size = new Size(276, 33);
+            label6.Size = new Size(216, 33);
             label6.TabIndex = 7;
-            label6.Text = "REGISTRACIJA PUTNIKA";
+            label6.Text = "BRISANJA KARATA";
             label6.Click += label6_Click;
             // 
             // Form5

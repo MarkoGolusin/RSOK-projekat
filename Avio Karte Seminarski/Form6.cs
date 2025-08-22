@@ -160,7 +160,7 @@ namespace SeminarskiRSOK
                     query.Append(" AND sletanje LIKE @sletanje");
 
                 if (!string.IsNullOrWhiteSpace(txtdatumP.Text))
-                    query.Append(" AND sletanje LIKE @datumPoletanja");
+                    query.Append(" AND datumPoletanja LIKE @datumPoletanja");
 
 
                 using (SqlCommand cmd = new SqlCommand(query.ToString(), con))
